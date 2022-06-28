@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(236, 236, 236);
+}
+
+#container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+    background-size: contain;
+    padding: 2rem 0rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    box-shadow: 4px 4px 5px 0px rgb(0 0 0 / 20%);
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+}
+
+.date_time-info {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+#time {
+    margin-top: 0.3rem;
+}
+
+#location {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#description {
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.weather-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.weather-details {
+    font-size: .7rem;
+    width: 80%;
+    text-transform: uppercase;
+}
+
+hr {
+    margin: 0.5rem 0;
+    border: 1px solid #fff;
+}
+
+.weather-details div {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+#temperature {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.max_min-temp {
+    display: flex;
+    gap: 1rem;
+    font-size: .9rem;
+}
+
+.max_min-temp div {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.loader {
+    width: 6rem;
+    height: 6rem;
+    display: inline-block;
+    border: 3px solid rgba(56, 56, 56, 0.3);
+    border-top-color: #000;
+    border-radius: 50%;
+    animation: 1s spin infinite ease-in-out;
+    margin: auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 420px) {
+    #container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    #container {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #container {
+        width: 25%;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1bb6d48af2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather App</title>
+</head>
+<body onload="onLoad()">
+    <div id="container">
+        <div class="date_time-info">
+            <div id="date"></div>
+            <div id="time"></div>
+        </div>
+        <div id="location"></div>
+        <div id="description"></div>
+        <div>
+            <img src="" alt="Icono clima" id="icon">
+        </div>
+        <div class="weather-container">
+            <div class="weather">
+                <div id="temperature"></div>
+                <div class="max_min-temp">
+                    <div>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <div id="temp_min"></div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-caret-up"></i>
+                        <div id="temp_max"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-details">
+                <hr>
+                <div>
+                    <span>Sensación térmica</span>
+                    <div id="feels_like"></div>
+                </div>
+                <div>
+                    <span>Humedad</span>
+                    <div id="humidity"></div>
+                </div>
+                <div>
+                    <span>Viento</span>
+                    <div id="wind"></div>
+                </div>
+                <div>
+                    <span>Presión</span>
+                    <div id="pressure"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loader" id="loader"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
