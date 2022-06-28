@@ -18,7 +18,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     margin: auto;
     background-size: contain;
     padding: 2rem 0rem;
@@ -120,7 +121,8 @@ hr {
 
 @media screen and (min-width: 420px) {
     #container {
-        width: 60%;
+        width: 80%;
+        height: 95%;
     }
 }
 
@@ -132,6 +134,6 @@ hr {
 
 @media screen and (min-width: 1024px) {
     #container {
-        width: 25%;
+        width: 30%;
     }
 }
