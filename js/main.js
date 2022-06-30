@@ -66,7 +66,7 @@ const onLoad = () => {
 let currentTime = new Date().getHours();
 
 if (7 <= currentTime && currentTime < 20) {
-    document.getElementById("container").style.backgroundImage = "url(img/day.webp)";
+    document.getElementById("container").style.backgroundImage = "url(img/day.jpg)";
 } else {
-    document.getElementById("container").style.backgroundImage = "url(img/night.webp)";
+    document.getElementById("container").style.backgroundImage = "url(img/night.jpg)";
 }
